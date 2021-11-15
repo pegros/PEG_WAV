@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>WAV_LoginHistory</label>
+    <protected>false</protected>
+    <values>
+        <field>Application__c</field>
+        <value xsi:type="xsd:string">CoE_Monitoring</value>
+    </values>
+    <values>
+        <field>FieldMapping__c</field>
+        <value xsi:type="xsd:string">{
+&quot;ApiType&quot;: &quot;ApiType&quot;,
+&quot;ApiVersion&quot;:&quot;ApiVersion&quot;,
+&quot;Application&quot;:&quot;Application&quot;,
+&quot;Browser&quot;:&quot;Browser&quot;,
+&quot;ClientVersion&quot;:&quot;ClientVersion&quot;,
+&quot;Id&quot;:&quot;Id&quot;,
+&quot;LoginTime&quot;:&quot;LoginTime&quot;,
+&quot;LoginType&quot;:&quot;LoginType&quot;,
+&quot;LoginUrl&quot;:&quot;LoginUrl&quot;,
+&quot;Platform&quot;:&quot;Platform&quot;,
+&quot;SourceIp&quot;:&quot;SourceIp&quot;,
+&quot;Status&quot;:&quot;Status&quot;,
+&quot;UserId&quot;:&quot;UserId&quot;
+}</value>
+    </values>
+    <values>
+        <field>MaxRowsPerFile__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>MetaJson__c</field>
+        <value xsi:type="xsd:string">WAV_LoginHistory</value>
+    </values>
+    <values>
+        <field>Operation__c</field>
+        <value xsi:type="xsd:string">Upsert</value>
+    </values>
+    <values>
+        <field>OrderBy__c</field>
+        <value xsi:type="xsd:string">Id</value>
+    </values>
+    <values>
+        <field>Query__c</field>
+        <value xsi:type="xsd:string">select ApiType, ApiVersion, Application, Browser, ClientVersion, Id, LoginTime, LoginType, LoginUrl, Platform, SourceIp, Status, UserId from LoginHistory where LoginTime = THIS_WEEK</value>
+    </values>
+    <values>
+        <field>isActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,110 @@
+{
+    "fileFormat": {
+        "charsetName": "UTF-8",
+        "fieldsDelimitedBy": ",",
+        "linesTerminatedBy": "\n"
+    },
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "WAV_LoginHistory",
+            "label": "WAV_LoginHistory",
+            "name": "WAV_LoginHistory",
+            "fields": [
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.ApiType",
+                    "name":  "ApiType",
+                    "type":  "Text",
+                    "label": "ApiType",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.ApiVersion",
+                    "name":  "ApiVersion",
+                    "type":  "Text",
+                    "label": "ApiVersion",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.Application",
+                    "name":  "Application",
+                    "type":  "Text",
+                    "label": "Application",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.Browser",
+                    "name":  "Browser",
+                    "type":  "Text",
+                    "label": "Browser",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.ClientVersion",
+                    "name":  "ClientVersion",
+                    "type":  "Text",
+                    "label": "ClientVersion",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.Id",
+                    "name":  "Id",
+                    "type":  "Text",
+                    "label": "Id",
+                    "defaultValue": "Unknown",
+                    "isUniqueId":true
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.LoginTime",
+                    "name": "LoginTime",
+                    "type": "Date",
+                    "label": "LoginTime",
+                    "format":"yyyy-MM-dd HH:mm:ss",
+                    "fiscalMonthOffset":0
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.LoginType",
+                    "name":  "LoginType",
+                    "type":  "Text",
+                    "label": "LoginType",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.LoginUrl",
+                    "name":  "LoginUrl",
+                    "type":  "Text",
+                    "label": "LoginUrl",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.Platform",
+                    "name":  "Platform",
+                    "type":  "Text",
+                    "label": "Platform",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.SourceIp",
+                    "name":  "SourceIp",
+                    "type":  "Text",
+                    "label": "SourceIp",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.Status",
+                    "name":  "Status",
+                    "type":  "Text",
+                    "label": "Status",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_LoginHistory.UserId",
+                    "name":  "UserId",
+                    "type":  "Text",
+                    "label": "UserId",
+                    "defaultValue": "Unknown"
+                }
+            ]
+        }
+    ]
+}

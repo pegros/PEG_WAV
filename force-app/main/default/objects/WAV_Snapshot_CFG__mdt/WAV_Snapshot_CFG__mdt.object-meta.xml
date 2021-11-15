@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom metadata type to configure the WAV_OrgSnapshot_SCH schedulable apex class, used to initiate/update Analytics datasets with various Org data.
+- For picklistValues, the label should contain the picklist field in &quot;ObjectApiName.FieldApiName&quot; format
+- For objectCount,   the label should contain the object in &quot;ObjectApiName&quot; format
+- For orgLimit,  the label should contain the limit name</description>
+    <label>WAV_Snapshot_CFG</label>
+    <pluralLabel>WAV_Snapshot_CFG</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

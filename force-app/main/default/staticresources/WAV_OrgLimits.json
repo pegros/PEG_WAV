@@ -1,0 +1,49 @@
+{
+    "fileFormat": {
+        "charsetName": "UTF-8",
+        "fieldsDelimitedBy": ",",
+        "linesTerminatedBy": "\n"
+    },
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "WAV_OrgLimits",
+            "label": "WAV_OrgLimits",
+            "name": "WAV_OrgLimits",
+            "fields": [
+                {
+                    "fullyQualifiedName": "WAV_OrgLimits.MeasureDate",
+                    "name": "MeasureDate",
+                    "type": "Date",
+                    "label": "MeasureDate",
+                    "format":"yyyy-MM-dd HH:mm:ss",
+                    "fiscalMonthOffset":0
+                },
+                {
+                    "fullyQualifiedName": "WAV_OrgLimits.Name",
+                    "name": "Name",
+                    "type": "Text",
+                    "label": "Name"
+                },
+                {
+                    "fullyQualifiedName": "WAV_OrgLimits.Value",
+                    "name":  "Value",
+                    "label": "Value",
+                    "type": "Numeric",
+                    "defaultValue":0,
+                    "precision": 10,
+                    "scale": 0
+                },
+                {
+                    "fullyQualifiedName": "WAV_OrgLimits.Limit",
+                    "name":  "Limit",
+                    "label": "Limit",
+                    "type": "Numeric",
+                    "defaultValue":0,
+                    "precision": 10,
+                    "scale": 0
+                }
+            ]
+        }
+    ]
+}

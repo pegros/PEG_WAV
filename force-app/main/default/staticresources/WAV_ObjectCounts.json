@@ -1,0 +1,40 @@
+{
+    "fileFormat": {
+        "charsetName": "UTF-8",
+        "fieldsDelimitedBy": ",",
+        "linesTerminatedBy": "\n"
+    },
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "WAV_ObjectCounts",
+            "label": "WAV_ObjectCounts",
+            "name": "WAV_ObjectCounts",
+            "fields": [
+                {
+                    "fullyQualifiedName": "WAV_ObjectCounts.MeasureDate",
+                    "name": "MeasureDate",
+                    "type": "Date",
+                    "label": "MeasureDate",
+                    "format":"yyyy-MM-dd HH:mm:ss",
+                    "fiscalMonthOffset":0
+                },
+                {
+                    "fullyQualifiedName": "WAV_ObjectCounts.ObjectName",
+                    "name":  "ObjectName",
+                    "label": "ObjectName",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_ObjectCounts.RecordCount",
+                    "name":  "RecordCount",
+                    "label": "RecordCount",
+                    "type": "Numeric",
+                    "defaultValue":0,
+                    "precision": 10,
+                    "scale": 0
+                }
+            ]
+        }
+    ]
+}

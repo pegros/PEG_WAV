@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isActive__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Tells whether the record value is currently active. Enables to modulate which elements are actually triggered at a given moment.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>isActive</label>
+    <type>Checkbox</type>
+</CustomField>

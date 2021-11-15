@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataSet__c</fullName>
+    <description>Dataset for which the record is defined</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>DataSet</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WAV_PicklistLabels</fullName>
+                <default>true</default>
+                <label>WAV_PicklistLabels</label>
+            </value>
+            <value>
+                <fullName>WAV_ObjectCounts</fullName>
+                <default>false</default>
+                <label>WAV_ObjectCounts</label>
+            </value>
+            <value>
+                <fullName>WAV_OrgLimits</fullName>
+                <default>false</default>
+                <label>WAV_OrgLimits</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

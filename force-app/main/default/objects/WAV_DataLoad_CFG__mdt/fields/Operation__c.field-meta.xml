@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation__c</fullName>
+    <description>Operation done on the target dataset (see InsightsExternalData object details)</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Operation</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Overwrite</fullName>
+                <default>true</default>
+                <label>Overwrite</label>
+            </value>
+            <value>
+                <fullName>Append</fullName>
+                <default>false</default>
+                <label>Append</label>
+            </value>
+            <value>
+                <fullName>Delete</fullName>
+                <default>false</default>
+                <label>Delete</label>
+            </value>
+            <value>
+                <fullName>Upsert</fullName>
+                <default>false</default>
+                <label>Upsert</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,59 @@
+{
+    "fileFormat": {
+        "charsetName": "UTF-8",
+        "fieldsDelimitedBy": ",",
+        "linesTerminatedBy": "\n"
+    },
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "WAV_PicklistLabels",
+            "label": "WAV_PicklistLabels",
+            "name": "WAV_PicklistLabels",
+            "fields": [
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.FullName",
+                    "name":  "FullName",
+                    "label": "FullName",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.ObjectName",
+                    "name":  "ObjectName",
+                    "label": "ObjectName",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.FieldName",
+                    "name":  "FieldName",
+                    "label": "FieldName",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.Code",
+                    "name":  "Code",
+                    "label": "Code",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.Label",
+                    "name":  "Label",
+                    "label": "Label",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.isActive",
+                    "name":  "isActive",
+                    "label": "isActive",
+                    "type":  "Text"
+                },
+                {
+                    "fullyQualifiedName": "WAV_PicklistLabels.isDefault",
+                    "name":  "isDefault",
+                    "label": "isDefault",
+                    "type":  "Text"
+                }
+            ]
+        }
+    ]
+}

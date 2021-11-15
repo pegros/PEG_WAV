@@ -1,0 +1,60 @@
+{
+    "fileFormat": {
+        "charsetName": "UTF-8",
+        "fieldsDelimitedBy": ",",
+        "linesTerminatedBy": "\n"
+    },
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "WAV_Test",
+            "label": "WAV_Test",
+            "name": "WAV_Test",
+            "fields": [
+                {
+                    "fullyQualifiedName": "WAV_Test.Id",
+                    "name":  "Id",
+                    "type":  "Text",
+                    "label": "Id",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_Test.Name",
+                    "name":  "Name",
+                    "type":  "Text",
+                    "label": "Name",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_Test.Type",
+                    "name":  "Type",
+                    "type":  "Text",
+                    "label": "Type",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_Test.CreatedDate",
+                    "name": "CreatedDate",
+                    "type": "Date",
+                    "label": "CreatedDate",
+                    "format":"yyyy-MM-dd HH:mm:ss",
+                    "fiscalMonthOffset":1
+                },
+                {
+                    "fullyQualifiedName": "WAV_Test.Owner",
+                    "name":  "Owner",
+                    "type":  "Text",
+                    "label": "Owner",
+                    "defaultValue": "Unknown"
+                },
+                {
+                    "fullyQualifiedName": "WAV_Test.Manager",
+                    "name":  "Manager",
+                    "type":  "Text",
+                    "label": "Manager",
+                    "defaultValue": "Unknown"
+                }
+            ]
+        }
+    ]
+}
