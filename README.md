@@ -9,7 +9,7 @@ Enables to push 4 types of data:
 * SOQL query based data (for non sync visible standard objects or to implement delta upsert)
 * picklist label values (via schema describe operations)
 * Object counts (via count() queries)
-* Org limits measurements (leveraging [System.OrgLimit class](the https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_OrgLimit.htm)) 
+* Org limits measurements,leveraging the [System.OrgLimit class](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_OrgLimit.htm)
 
 
 # Configuration
