@@ -21,8 +21,6 @@ Configuration relies on a set of custom metadata records:
 ![Prg Limit](/media/OrgLimit.png)
 ![Object Count](/media/ObjectCount.png)
 
-For each custom metadata record, only recors with "isActive" set to true are taken into account by the schedulable processes.
-
 Each configuration relies on a set of static resources to describe the target datasets within Tableau CRM.
 * For the **WAV_Snapshot_CFG** records, the static resources are provided by the package
 * For the **WAV_DataLoad_CFG** records, they need to be added and registered in the custom metadat records, leveraging the standard Tableau CRM [External Data Format](https://resources.docs.salesforce.com/234/latest/en-us/sfdc/pdf/bi_dev_guide_ext_data_format.pdf)
@@ -147,4 +145,9 @@ Each configuration relies on a set of static resources to describe the target da
 * **WAV_OrgLimitSnapshot_SCH** to schedule object counts snapshots
 * **WAV_PicklistLabelSnapshot_SCH** to schedule picklist label syncs
 
+For each schedulable Apex process, only custom metadata records with "isActive" set to true
+are taken into account.
 
+Manual launch is possible via the console in anonymous mode leveraging the
+_**WAV_DataLoad_SCH.executeSynch(String dataSetName)**_ static method (even if
+_isActive_ is set to false)
