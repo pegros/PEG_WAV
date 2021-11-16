@@ -274,16 +274,15 @@ The author of theses posts is the one used to run the schedulable Apex class.
 # Usage Guide
 
 ## Picklist Label Usage in Tableau CRM
-The **WAV_Picklists** dataset may be then used in the followin
-
-It may be first loaded via an _edgemart_ step
+The **WAV_Picklists** dataset may be then used in the following way:
+* It may be first loaded via an _edgemart_ step
 ![Picklist Data Flow Example](/media/PicklistDataFlow.png)
+* It may then filtered via a _filter_ step
 
-then filtered via a _filter_ step
-<img src="/media/PicklistFilterStep.png" alt="Picklist Filter Step Example" width="200"/>
+<img src="/media/PicklistFilterStep.png" alt="Picklist Filter Step Example" width="250"/>
+* At last, it may be added to the target dataset via an _augment_ step
 
-then added to the target dataset via an _augment_ step
-<img src="/media/PicklistAugmentStep.png" alt="Picklist Augment Step Example" width="200"/>
+<img src="/media/PicklistAugmentStep.png" alt="Picklist Augment Step Example" width="250"/>
 
 ## Data Load Examples
 Although standard Tableau CRM sync addresses most of the needs, typical uses cases for
