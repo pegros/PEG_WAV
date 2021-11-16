@@ -279,11 +279,11 @@ The **WAV_Picklists** dataset may be then used in the following way:
 ![Picklist Data Flow Example](/media/PicklistDataFlow.png)
 * It may then filtered via a _filter_ step
 
-<center><img src="/media/PicklistFilterStep.png" alt="Picklist Filter Step Example" width="250"/></center>
+<p align="center"><img src="/media/PicklistFilterStep.png" alt="Picklist Filter Step Example" width="250"/></p>
 
 * At last, it may be added to the target dataset via an _augment_ step
 
-<center><img src="/media/PicklistAugmentStep.png" alt="Picklist Augment Step Example" width="250"/></center>
+<p align="center"><img src="/media/PicklistAugmentStep.png" alt="Picklist Augment Step Example" width="250"/></p>
 
 ## Data Load Examples
 Although standard Tableau CRM sync addresses most of the needs, typical uses cases for
