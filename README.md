@@ -51,8 +51,8 @@ sfdx force:source:deploy -u <yourOrgAlias> -w 10 --verbose -p force-app
 
 Process configuration rely on 
 * schedulable Apex standard properties to define when to execute each process 
-* custom metadata records (prefixed as _**WAV_**_) to define the scope and way the data flows towards Tableau CRM should be executed
-* static resources (prefixed as _**WAV_**_ for the package ones) to provide the target Tableau CRM dataset JSON description files
+* custom metadata records (prefixed as _**WAV\_**_) to define the scope and way the data flows towards Tableau CRM should be executed
+* static resources (prefixed as _**WAV\_**_ for the package ones) to provide the target Tableau CRM dataset JSON description files
 
 This configuration actually depends on the type of process, with the following 2 options:
 * DataLoad (via SOQL queries)
