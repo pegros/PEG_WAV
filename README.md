@@ -3,10 +3,10 @@
 The WAV package aims at bypassing various limitations on the current Einstein Analytics / Tableau CRM integration with Salesforce core platform. It is a set of Apex tools enabling to perform (and schedule) various load/update operations within Einstein Analytics external datasets right from Salesforce core.
 
 It addresses especially the following needs:
-* load data via SOQL queries (for non sync visible standard objects or to implement delta upsert)
-* sync picklist label values (via Schema describe() operations) to get proper picklist labels instead of codes in dashboards
-* take Object count snapshots (via count() queries) for capacity planning
-* take Org limits measurement snapshots (leveraging the [System.OrgLimit](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_OrgLimit.htm) class) for capacity planning and platform monitoring
+* **load data via SOQL queries** (for non sync visible standard objects or to implement delta upsert)
+* **sync picklist label values** (via Schema describe() operations) to get proper picklist labels instead of codes in dashboards
+* **take Object count snapshots** (via count() queries) for capacity planning
+* **take Org limits measurement snapshots** (leveraging the [System.OrgLimit](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_OrgLimit.htm) class) for capacity planning and platform monitoring
 
 It is highly configurable, the set of data to load being determined via Custom Metadata entries and the target Tableau CRM dataset being described in static resources. It indeed leverages the standard [external data API](https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_ext_data.meta/bi_dev_guide_ext_data/bi_ext_data_overview.htm) to push Salesforce 
 data into Tableau CRM datasets.
@@ -63,6 +63,7 @@ This configuration actually depends on the type of process, with the following 2
 
 Configuration for the **WAV_DataLoad_SCH** processes primarily relies on **WAV_DataLoad_CFG** custom metadata records 
 to define the SOQL queries to use and their mappings with the applicable Tableau CRM datasets.
+
 ![Login History Example](/media/SoqlData.png)
 
 
@@ -284,14 +285,17 @@ then filtered via a _filter_ step
 then added to the target dataset via an _augment_ step
 ![Picklist Augment Step Example](/media/PicklistAugmentStep.png)
 
+## Data Load Examples
+Although standard Tableau CRM sync addresses most of the needs, typical uses cases for
+the custom data load are: 
+* feeding data from external objects (beware of volumes!)
+* replicating the detailed user login history (to be done in upsert mode on the last days)
+* syncing Knowledge data catagories 
+![Data Categories Data Load Example](/media/DataLoadDataCategories.png)
+* replicating Prompt Actions (for In-App Guidance)
+![Prompt Actions Data Load Example](/media/DataLoadPromptActions.png)
 
-
-
-
-
-
-
-
-
-
+The _raw_ datasets fed by the DataLoad process are usually stored in a dedicated _**Staging**_
+Tableau CRM App. They are then reworked via Data Flows or Recipes to generate the actual target 
+datasets used in Dashboards (and located in target Apps according to the needs).
 
