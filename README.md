@@ -280,10 +280,10 @@ It may be first loaded via an _edgemart_ step
 ![Picklist Data Flow Example](/media/PicklistDataFlow.png)
 
 then filtered via a _filter_ step
-![Picklist Filter Step Example](/media/PicklistFilterStep.png)
+<img src="/media/PicklistFilterStep.png" alt="Picklist Filter Step Example" width="200"/>
 
 then added to the target dataset via an _augment_ step
-![Picklist Augment Step Example](/media/PicklistAugmentStep.png)
+<img src="/media/PicklistAugmentStep.png" alt="Picklist Augment Step Example" width="200"/>
 
 ## Data Load Examples
 Although standard Tableau CRM sync addresses most of the needs, typical uses cases for
