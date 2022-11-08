@@ -68,10 +68,10 @@ public class WAV_DataLoad_SCH implements Schedulable {
     public static void executeSynch(String dataSetName) {
         System.debug('executeSynch for dataset ' + dataSetName);
         
-        WAV_DataLoad_CFG__mdt configElt = [select DeveloperName, MasterLabel, FieldMapping__c, Operation__c, 
-                                                  MaxRowsPerFile__c, MetaJson__c, Query__c, OrderBy__c 
-                                           from WAV_DataLoad_CFG__mdt
-                                           where DeveloperName = :dataSetName ][0];
+        WAV_DataLoad_CFG__mdt configElt = [ SELECT  DeveloperName, MasterLabel, FieldMapping__c, Operation__c, 
+                                                    MaxRowsPerFile__c, MetaJson__c, Query__c, OrderBy__c 
+                                            FROM WAV_DataLoad_CFG__mdt
+                                            WHERE DeveloperName = :dataSetName ][0];
         system.debug('executeSynch configElt fetched ' + configElt);
         
         WAV_DataLoad_QUE processJob = new WAV_DataLoad_QUE(configElt);

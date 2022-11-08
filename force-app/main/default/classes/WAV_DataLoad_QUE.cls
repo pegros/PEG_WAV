@@ -130,14 +130,15 @@ public class WAV_DataLoad_QUE implements Queueable {
             update loader;
             system.debug('execute loader action triggered ' + loader);
             if (!Test.isRunningTest()) {
-              ConnectApi.FeedElement feedElement = ConnectApi.ChatterFeeds.postFeedElement(
-                'internal', 'me',
-                ConnectApi.FeedElementType.FeedItem,
-                '### WAV Dataload processed for ' + processName + ' data ###\n\n'
-                + 'started at ' + startTS + ' and ended at ' + System.now() + '\n'
-                + 'completed after ' + (iteration + 1) + ' iteration(s) (' + (iteration * offset + partNbr) + ' records fetched).');
+                ConnectApi.FeedElement feedElement = ConnectApi.ChatterFeeds.postFeedElement(
+                    'internal', 'me',
+                    ConnectApi.FeedElementType.FeedItem,
+                    '### WAV Dataload processed for ' + processName + ' data ###\n\n'
+                    + 'started at ' + startTS + ' and ended at ' + System.now() + '\n'
+                    + 'completed after ' + (iteration + 1) + ' iteration(s) (' + (iteration * offset + partNbr) + ' records fetched).');
             }
-        } else {
+        }
+        else {
             system.debug('execute DataLoad process '  + processName
                        + ' requeued after iteration ' + iteration);
             WAV_DataLoad_QUE continueJob = new WAV_DataLoad_QUE(
@@ -164,13 +165,12 @@ public class WAV_DataLoad_QUE implements Queueable {
        
        Integer rowNbr = 0;
        for (SObject iterObj : database.query(offsetQuery)) {
-           system.debug('processDS processing object ' + iterObj);
-           loaderFileStr += formatDataLine(fieldMap,hasRelationFields,iterObj);
-           rowNbr += 1;
-           lastFieldValue = String.valueOf(iterObj.get(orderByField));
+            system.debug('processDS processing object ' + iterObj);
+            loaderFileStr += formatDataLine(fieldMap,hasRelationFields,iterObj);
+            rowNbr += 1;
+            lastFieldValue = String.valueOf(iterObj.get(orderByField));
        }
-       system.debug('processDS data file content prepared with '
-                    + rowNbr + ' rows.');
+       system.debug('processDS data file content prepared with ' + rowNbr + ' rows.');
        addDataPart(loaderFileStr);
                        
        system.debug('processDS END: data file stored ');
